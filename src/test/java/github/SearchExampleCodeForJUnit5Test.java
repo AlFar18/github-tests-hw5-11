@@ -14,7 +14,7 @@ public class SearchExampleCodeForJUnit5Test {
     // ввести в поле поиска selenide и нажать Enter
     $("[data-test-selector=nav-search-input]").setValue("selenide").pressEnter();
     // нажимаем на линк от первого результата поиска
-    $$("ul.repo-list li").first().$("a").click();
+    $$("ul.repo-list li").$("a").click();
     // переход в раздел Wiki
     $("#wiki-tab").click();
     // поиск SoftAssertions
